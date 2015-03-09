@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap Vertical Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!-- Twitter Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="bootstrap-vertical-menu.css">
+  
+</head>
+<body>
+  
+  <nav class="navbar navbar-vertical-left">
+    <ul class="nav navbar-nav">
+      <li>
+        <a href>
+          <i class="fa fa-fw fa-lg fa-star"></i> Menu 1
+        </a>
+      </li>
+      <li>
+        <a href>
+          <i class="fa fa-fw fa-lg fa-font"></i> Menu 2
+        </a>
+      </li>
+      <li>
+        <a href>
+          <i class="fa fa-fw fa-lg fa-rocket"></i> Menu 3
+        </a>
+      </li>
+      <li>
+        <a href>
+          <i class="fa fa-fw fa-lg fa-cog"></i> Menu 4
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('a').click(function(event) {
+        $('a').removeClass('selected');
+        $(this).addClass('selected');
+        event.preventDefault();
+      })
+    });
+  </script>
+
+</body>
+</html>
